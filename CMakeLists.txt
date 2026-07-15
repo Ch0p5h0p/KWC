@@ -9,4 +9,7 @@ pkg_check_modules(WLROOTS REQUIRED wlroots-0.20>=0.20.2)
 pkg_check_modules(PIXMAN REQUIRED pixman-1)
 
 add_executable(KWC src/server.c
-        src/client.c)
+        src/client.c
+        src/output.c
+        src/output.h
+        src/server.h)
